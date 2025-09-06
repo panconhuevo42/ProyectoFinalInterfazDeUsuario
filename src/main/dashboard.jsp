@@ -3,7 +3,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard - Alimentación Balanceada</title>
+    <title><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Alimentación Balanceada</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head></title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
