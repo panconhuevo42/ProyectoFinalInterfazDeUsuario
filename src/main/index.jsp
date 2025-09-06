@@ -11,21 +11,32 @@
   <!-- Overlay para mejorar contraste si es necesario -->
   <div class="background-overlay"></div>
 
-  <header>
-    <h1>Alimentación Balanceada desde la base hasta la punta de la pirámide</h1>
-    <p>La mente es la planta que debes cuidar, pero el cuerpo es la tierra donde esta se cultiva</p>
+  <header class="encabezado">
+    <!-- Texto centrado -->
+    <div class="titulo">
+      <h1>Alimentación Balanceada desde la base hasta la punta de la pirámide</h1>
+      <p>La mente es la planta que debes cuidar, pero el cuerpo es la tierra donde esta se cultiva</p>
+    </div>
   </header>
 
-  <nav>
+  <nav class="navbar">
+  <!-- Contenedor del logo -->
+  <div class="nav-left">
+    <a href="dashboard.jsp" class="nav-logo">
+      <img src="imagenes/logo.png" alt="Logo del proyecto">
+    </a>
+  </div>
 
+  <!-- Contenedor de los enlaces -->
+  <div class="nav-right">
     <a href="#Base1">Nivel 1</a>
     <a href="#Base2">Nivel 2</a>
     <a href="#Base3">Nivel 3</a>
     <a href="#Base4">Nivel 4</a>
     <a href="#Base5">Nivel 5</a>
     <a href="login.jsp">Iniciar Sesión</a>
-  
-  </nav>
+  </div>
+</nav>
 
   <section class="hero">
     <h1>Eres lo que comes</h1>

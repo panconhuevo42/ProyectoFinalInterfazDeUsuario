@@ -136,4 +136,43 @@ footer {
   font-size: 1em;
   margin-top: 40px;
 }
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* separa logo e items */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 30px;
+}
+
+/* Contenedor izquierdo (logo) */
+.nav-left {
+    flex: 1; /* ocupa el espacio de la izquierda */
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Contenedor derecho (enlaces) */
+.nav-right {
+    display: flex;
+    gap: 20px; /* espacio entre enlaces */
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: #008000; /* verde al pasar el mouse */
+}
+
+
 }
