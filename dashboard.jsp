@@ -14,7 +14,14 @@
 <body>
 <header>
     <img src="imagenes/logo.png" alt="Logo App" class="logo">
-    <h1>Panel de Administración</h1>
+    <% 
+    String username = (String) session.getAttribute("username");
+    if (username == null) {
+        response.sendRedirect("login.jsp");
+        return;
+    }
+%>
+<h2>Bienvenido <%= username %></h2>
 </header>
 
 <main class="dashboard">
