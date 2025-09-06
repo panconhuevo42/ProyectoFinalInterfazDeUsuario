@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(fondo.jpg);
+  background-image: url("../imagenes/fondo.jpg"); /* <- aquí va extensión */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,6 @@ body {
   color: #ffffff;
   position: relative;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
 
 header {
   background-color: rgba(136, 192, 87, 0.8);
@@ -136,4 +135,5 @@ footer {
   padding: 15px;
   font-size: 1em;
   margin-top: 40px;
+}
 }

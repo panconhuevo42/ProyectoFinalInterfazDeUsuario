@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alimentación Balanceada</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
@@ -17,17 +17,20 @@
   </header>
 
   <nav>
+
     <a href="#Base1">Nivel 1</a>
     <a href="#Base2">Nivel 2</a>
     <a href="#Base3">Nivel 3</a>
     <a href="#Base4">Nivel 4</a>
     <a href="#Base5">Nivel 5</a>
+    <a href="login.jsp">Iniciar Sesión</a>
+  
   </nav>
 
   <section class="hero">
     <h1>Eres lo que comes</h1>
     <p>La pirámide alimenticia es una representación gráfica que organiza los alimentos en niveles, indicando qué grupos deben consumirse en mayor o menor cantidad para llevar una dieta equilibrada.</p>
-    <img src="piramide alimenticia.png" alt="Imagen de la pirámide alimenticia">
+    <img src="imagenes/piramide alimenticia.png" alt="Imagen de la pirámide alimenticia">
   </section>
 
   <!-- Nivel 1 -->
@@ -183,6 +186,9 @@
     </div>
   </section>
 
+
+
+  
   <footer>
     <p>&copy; 2025 Alimentación Balanceada</p>
   </footer>
