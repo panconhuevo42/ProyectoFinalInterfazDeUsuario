@@ -1,35 +1,37 @@
 package com.tuapp;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
 
-@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String user = req.getParameter("usuario");
-        String pass = req.getParameter("password");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-        HttpSession session = req.getSession();
+        String user = request.getParameter("username");
+        String pass = request.getParameter("password");
 
-        // 🔹 Usuario y contraseña simulados
-        String userSimulado = "admin";
-        String passSimulada = "1234";
-
-        if (user != null && pass != null && user.equals(userSimulado) && pass.equals(passSimulada)) {
-            // Guardar usuario en sesión
+        // Validación simulada
+        if ("admin".equals(user) && "1234".equals(pass)) {
+            // Crear sesión y guardar usuario
+            HttpSession session = request.getSession();
             session.setAttribute("username", user);
-            // ✅ Redirección correcta dentro del contexto de la app
-            resp.sendRedirect(req.getContextPath() + "/dashboard.jsp");
+
+            // Redirigir al dashboard
+            response.sendRedirect("dashboard.jsp");
         } else {
-            // Error de login simulado
-            req.setAttribute("error", "Usuario o contraseña inválidos (simulado).");
-            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            // Enviar mensaje de error y volver a login.jsp
+            request.setAttribute("error", "Usuario o contraseña inválidos");
+            request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }
 }
+
+
 
 
